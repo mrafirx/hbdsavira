@@ -38,6 +38,15 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-justify: center;
+}
+
+.happy img {
+    border-radius: 50%;
+}
+
+.happy {
+    text-align: center;
 }
 
 .blue {
@@ -58,4 +67,88 @@ body {
 .yellow {
     color: yellow;
     background-color: yellow;
+}
+
+/* || MEDIA QUERIES */
+@media screen and (min-width: 320px) {
+    .happy {
+        z-index: 1;
+    }
+
+    .happy img {
+        width: 150px;
+    }
+
+    .happy h1{
+        font-size: 1rem;
+    }
+    .emoji {
+        font-size: 2rem;
+    }
+
+    span {
+        position: absolute;
+        top: -10000px;
+    }
+
+    .cover {
+        width: 25vw;
+        height: 27vh;
+    
+        grid-area: "bx";
+    }
+}
+
+
+@media screen and (min-width: 768px) {
+    .happy h1{
+        font-size: 1.5rem;
+    }
+
+    .happy img {
+        width: 250px;
+    }
+
+    .emoji {
+        font-size: 2rem;
+    }
+
+    span {
+        position: inherit;
+    }
+
+    .cover {
+        width: 25vw;
+        height: 25vh;
+    
+        grid-area: "bx";
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .happy img{
+        width: 500;
+    }
+
+    .happy h1{
+        font-size: 2rem;
+    }
+
+    .happy .emoji {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    .happy img{
+        width: 500;
+    }
+
+    .happy h1{
+        font-size: 2rem;
+    }
+
+    .happy .emoji {
+        font-size: 2rem;
+    }
 }
